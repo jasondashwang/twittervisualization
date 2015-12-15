@@ -12,7 +12,7 @@ var twit = require("twitter"),
 var app = express();
 var path = require('path');
 
-app.set('port', process.env.PORT || 2400);
+app.set('port', process.env.PORT || 3000);
 app.set('views', './views');
 app.set('view engine', 'jade');
 
@@ -62,5 +62,3 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', home);
 app.post('/', results)
 app.listen(app.get('port'));
-
-console.log('Server running at 2400');
