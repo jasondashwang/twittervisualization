@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+	head
+		script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.4.min.js')
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel='stylesheet')
+		link(href='/css/style.css', rel='stylesheet', type='text/css')
+
+	body
+		div.divcenter
+			h1.center
+				Simple Data Visualization with Twitter API
+			p
+				Made with NodeJS, ExpressJS, Jade Templating, and D3JS
+		br
+		div.divcenter
+			form(action='/', method='post')
+				div.input.divcenter
+					span.p Hashtag #
+					input(type="text", name="hashtag")
+				div.input.divcenter
+					span.p How many seconds? 
+					input(type="number", name="seconds", min="1", max= "100", value="1")
+				div.input.divcenter
+					input(type='submit', value="Submit")
+		br
+		div.divcenter
+			a(class='button center', href='https://github.com/jasonwang67/twittervisualization') Github Repository Link

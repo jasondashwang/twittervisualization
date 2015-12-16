@@ -1,0 +1,13 @@
+.center{
+	text-align: center;
+}
+
+.divcenter{
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#myCode{
+    display: none;
+ }

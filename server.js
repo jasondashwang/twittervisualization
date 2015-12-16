@@ -13,7 +13,7 @@ var app = express();
 var path = require('path');
 
 app.set('port', process.env.PORT || 3000);
-app.set('views', './views');
+app.set('views', './public/views');
 app.set('view engine', 'jade');
 
 function home(req, res){
